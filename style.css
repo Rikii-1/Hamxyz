@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0; 
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img1.pixhost.to/images/5336/592918315_hamxyzofficial.jpg') no-repeat center center/cover;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+/* Particle canvas */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Ganti dengan nilai yang pas, misal 1.5rem */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Foto profil */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+/* Teks sambutan */
+#welcome-text {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Tombol navigasi */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00b894, #0984e3);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0984e3, #00b894);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+/* Audio */
+#audio {
+  display: none;
+}
+.best-product-section {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  color: white;
+}
+
+.best-product-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.beli-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.beli-button:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+  transform: scale(1.05);
+}
+.Best {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #1e1e1e;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  color: white;
+}
+.login-container input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+}
+.login-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background: #0088cc;
+}
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}

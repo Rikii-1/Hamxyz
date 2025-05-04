@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Hamxyz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://img1.pixhost.to/images/5336/592918315_hamxyzofficial.jpg') no-repeat center center/cover;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      background-color: #000000;
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .light-effect {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+      animation: moveLights 20s linear infinite;
+      border-radius: 50%;
+      z-index: -2;
+    }
+    @keyframes moveLights {
+      0% { top: 10%; left: 10%; transform: translate(0, 0) scale(1); }
+      25% { top: 30%; left: 70%; transform: translate(0, 0) scale(1.2); }
+      50% { top: 70%; left: 50%; transform: translate(0, 0) scale(1); }
+      75% { top: 50%; left: 20%; transform: translate(0, 0) scale(1.3); }
+      100% { top: 10%; left: 10%; transform: translate(0, 0) scale(1); }
+    }
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeSlideDown 1s ease forwards;
+    }
+    @keyframes fadeSlideDown {
+      0% {opacity: 0; transform: translateY(-50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeSlideUp {
+      0% {opacity: 0; transform: translateY(50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    h1 {
+      color: white;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: linear-gradient(45deg, #0066cc, #003366);
+      padding: 12px 30px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+    #whatsapp-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeSlideUp 1s ease forwards;
+      animation-delay: 0.5s; /* Memberi jeda sebelum animasi dimulai */
+      opacity: 0; /* Awalnya tidak terlihat */
+    }
+    
+    .btn-whatsapp {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      padding: 12px 30px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 10px;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #128C7E, #075E54);
+    }
+ </style>
+</head>
+<body>
+
+<div id="particles-js"></div>
+<div class="light-effect"></div>
+<div class="light-effect" style="animation-delay:5s;"></div>
+
+<audio autoplay loop>
+  <source src="https://files.catbox.moe/wy4wkn.mp3" type="audio/mpeg">
+</audio>
+
+<div id="loginPage" class="container">
+  <h1>Hi, I Am HamxyzOffc</h1>
+  <p>Masukkan Password Yang Di Berikan Bang Hamxyz Untuk Lanjut</p>
+  <input type="text" id="password" placeholder="Password" style="padding:10px; border-radius:10px; border:none;">
+  <br><br>
+  <button class="btn" onclick="checkPassword()">Login</button>
+</div>
+
+  <div id="whatsapp-container">
+    <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/6282292370114?text=bg%20minta%20pw'">
+  <i class="fab fa-whatsapp"></i> Minta Pw
+</button>
+  </div>
+<script>
+
+  function checkPassword() {
+  const password = document.getElementById("password").value;
+  if (password === "hamxyz123") {
+    window.location.href = "admin.html";
+  } else if (password === "user123") {
+    window.location.href = "home.html";
+  } else {
+    alert("Password salah!");
+  }
+}
+
+// config particles.js
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": true
+    },
+    "size": {
+      "value": 3,
+      "random": true
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    "modes": {
+      "repulse": {
+        "distance": 100
+      },
+      "push": {
+        "particles_nb": 4
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+</body>
+</html>
